@@ -48,3 +48,21 @@ var greeting = GetGreeting();
 
 Console.WriteLine(greeting);
 
+
+//chararrays
+var my_array = "Feierabend!";
+var my_letter = my_array[0];
+
+//Collections Basics
+//Array
+string[] namen = new string[5];
+string[] alternative_namen = ["A", "B", "C"];
+namen[0] = "Tobi";
+namen[1] = "Melanie";
+namen[2] = "Torben";
+Console.WriteLine(namen[0][0]);
+
+
+//Array ist eine Liste an Werten
+//Eine kontinuirliche Speicherregion, für mehrere Daten eines gewissen Types
+int[] nums = new int[5];

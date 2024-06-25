@@ -1,10 +1,33 @@
-﻿namespace TD
+﻿
+//Menü anzeigen mit Optionen
+
+Console.WriteLine("Willkommen bei TD!");
+Console.WriteLine("Was möchtest du tun?");
+Console.WriteLine("\t1. Neues Todo erstellen\n\t2. Todos anzeigen");
+
+do
 {
-    internal class Program
+    var input = Console.ReadLine();
+
+    switch (input)
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello, World!");
-        }
+        case "1":
+            //Option 1: Todo erstellen
+
+            //Userinput nehmen
+
+            //Todo erstellen
+            Console.WriteLine("CREATE");
+            
+            break;
+        case "2":
+            //Liste der Todos anzeigen
+            Console.WriteLine("READ");
+            break;
     }
-}
+} while (false);
+
+
+
+
+
