@@ -77,4 +77,23 @@ Console.WriteLine(namen[0][0]);
 
 //Array ist eine Liste an Werten
 //Eine kontinuirliche Speicherregion, für mehrere Daten eines gewissen Types
+//Ein Array hat immer eine feste Größe, welche bei der Initialisierung festgelegt 
+//werden muss
+//Array.Length ist immer die maximale Länge des Arrays, sprich 
+//leere Plätze im Array zählen immer mit
 int[] nums = new int[5];
+nums[0] = 10;
+
+/*
+ For-Loop - 4 Komponenten 
+    1. Deklaration der Zählervariablen
+    2. Bedingung der Schleife (Wann zu Ende?)
+    3. Operation, welche nach jeder Iteration ausgeführt wird
+        -> idr. Inkrement (i++) oder Dekrement (i--)
+    4. Codeblock (Function Body),  welcher definiert, was bei jeder Iteration der 
+       Schleife passieren soll. 
+ */
+for (int i = 0; i < nums.Length; i++)
+{
+    Console.WriteLine(nums[i]);
+}
