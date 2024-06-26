@@ -39,6 +39,18 @@ PrintName();
 PrintName();
 PrintName();
 
+/*
+ * JavaScript
+ function printName() {
+  console.log("Hello World!");
+ }
+ * Python
+ def printName():
+   print("Hello World!")
+ # hier gehts dann weiter
+ */
+
+
 string GetGreeting()
 {
     return "Herzlich Willkommen!";
