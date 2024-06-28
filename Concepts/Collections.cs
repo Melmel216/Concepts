@@ -70,7 +70,7 @@ namespace Concepts
       //  {
       //    Console.WriteLine(my_cool_variable);
       //  }
-}
+
       // Console.WriteLine(my_cool_variable); # Crash! Variable existiert nicht im Kontext
 
 

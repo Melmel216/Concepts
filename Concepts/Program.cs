@@ -1,61 +1,41 @@
-﻿// Deklaration & Initialisierung
-// string[] namen = new string[20];
-// Deklaration
-string[] namen = new string[2];
+﻿var input = Console.ReadLine();
+// int index = Convert.ToInt32(input);
+// int index = int.Parse(input);
+//bool error = int.TryParse(input, out int index);
 
-namen[0] = "Tobi";
-namen[1] = "Susanne";
-// namen[2] = "Markus";
+//if (!error)
+//{
+//    Console.WriteLine(error);
+//}
+//else
+//{
+//    Console.WriteLine(index);
+//}
 
-namen = namen.Append("Markus").ToArray();
-// weil voll, geht nicht -> passiert was, aber nicht das was wir denken was passieren sollte...
+//Beispiel: Funktion/Methode mit Parameter
+//Eine Funktion kann keinen, einen oder beliebig viele Parameter bekommen
+//Die Parameter können die Funktionsweise einer Methode dynamisch ändern
 
-for (int i = 0; i < namen.Length; i++)
+
+//Aufgabe für's Wochenende:
+//Erstelle eine Funktion für die Ausgabelogik der Liste
+//Was könnten weitere nützliche Funktionen für unsere App sein?
+
+
+
+int getIndex(string prompt)     //Funktionssignatur
 {
-    Console.WriteLine(namen[i]);
+    Console.WriteLine(prompt);
+    var input = Console.ReadLine();
+    var number = int.Parse(input);
+    return number;
 }
-string[] test_array = { "test", "me" };
-Console.WriteLine(test_array); // string[]
 
-//// Listen
-Console.WriteLine("---Listen---");
+List<string> todos = new();
 
-// List<string> hamster = new List<string>();
-//   var hamster = new List<string>();
-List<string> hamster = new();
-Console.WriteLine(hamster);
+todos.Add("Wäsche waschen");
+todos.Add("Bügeln");
 
-// Hinzufügen am Ende
-hamster.Add("Max"); // index 0
-hamster.Add("Erika"); // index 1
-
-// Hinzufügen an gewissen Index
-hamster.Insert(1, "Fabian");
-
-Console.WriteLine(hamster[0]);
-
-// Löschen eines Elements => Angabe des Elements (nicht der Index)
-hamster.Remove("Fabian");
-
-Console.WriteLine(hamster[1]);
-
-// Löschen des letzten Elements
-// hamster.RemoveAt(hamster.Count - 1);
-
-hamster.Add("Melanie");
-
-if (hamster.Contains("Max"))
-{
-    // mach was cooles...
-}
-// Anders als beim Array:
-// Liste hat Count, statt Länge!
-// Count ist die aktuelle größe der Liste
-// Length ist die Gesamtkapazität des Arrays
-// ps: Liste hat eine Kapazität, aber für uns nicht relevant -> hamster.Capacity
-Console.WriteLine(hamster.Count);
-
-for (int index = 0; index < hamster.Count; index++)
-{
-    Console.WriteLine(hamster[index]);
-}
+int index = getIndex("Gebe die Aufgabe ein, die du bearbeiten willst:");
+//int my_second_index = getIndex(); // kann beliebig oft aufgerufen werden
+Console.WriteLine(todos[index]);
