@@ -2,7 +2,7 @@
 //Menü anzeigen mit Optionen
 
 Console.WriteLine("Willkommen bei TD!");
-string[] todos = new string[10];
+List<string> todos = new();
 
 do
 {
@@ -17,25 +17,16 @@ do
             Console.WriteLine("Was hast du zu tun? <Enter zum bestätigen>");
             var todo = Console.ReadLine();
 
-            for (int i = 0; i < todos.Length; i++)
-            {
-                if (todos[i] == null)
-                {
-                    todos[i] = todo;
-                    Console.WriteLine("Todo hinzugefügt: " + todos[i]);
-                    break;
-                }
-            }
+            todos.Add(todo);
+
+            Console.WriteLine("Todo hinzugefügt:" + todo);
 
             break;
         case "2":
             Console.WriteLine("Du hast folgende Aufgaben:");
-            
-            for (int i = 0; i < todos.Length; i++)
-            {
-                Console.WriteLine($"\t{i}. {todos[i]}");
-            }
-            
+
+            todos.ForEach(Console.WriteLine);
+
             Console.WriteLine("Drücke <Enter> um zurück ins Menü zu kommen.");
             Console.ReadKey();
             
@@ -43,15 +34,16 @@ do
         case "3":
             //Löschen
             Console.WriteLine("Welches Todo möchtest du löschen?");
-            
-            for (int i = 0; i < todos.Length; i++)
+
+            //todos.ForEach(Console.WriteLine);
+            for (int i = 0; i < todos.Count; i++)
             {
                 Console.WriteLine($"\t{i}. {todos[i]}");
             }
             var todoIndexString = Console.ReadLine();
             int todoIndex = int.Parse(todoIndexString);
-            
-            todos[todoIndex] = null;
+
+            todos.RemoveAt(todoIndex);
             
             Console.WriteLine("Todo erfolgreich gelöscht.");
             break;
@@ -59,15 +51,20 @@ do
             //Updaten eines Todos (verändern des strings)
             //
             Console.WriteLine("Welches Todo möchtest du updaten?");
-            
-            for (int i = 0; i < todos.Length; i++)
+
+            //todos.ForEach(Console.WriteLine);
+            for (int i = 0; i < todos.Count; i++)
             {
                 Console.WriteLine($"\t{i}. {todos[i]}");
             }
+
             todoIndexString = Console.ReadLine();
             todoIndex = int.Parse(todoIndexString);
-            
+
+            //todos.RemoveAt(todoIndex);
+
             Console.WriteLine("Bitte gebe die Änderung ein:");
+
             var todoupdate = Console.ReadLine();
             todos[todoIndex] = todoupdate;
             
