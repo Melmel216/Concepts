@@ -8,7 +8,7 @@ int getIndex(string prompt)     //Funktionssignatur
     return number;
 }
 
-void Start()
+static void Start()
 {
     Console.Clear();
     Console.WriteLine("Was möchtest du tun?");
@@ -49,20 +49,20 @@ do
 
             Console.WriteLine("Todo hinzugefügt:" + todo);
 
-            returnToMenu();
+            ReturnToMenu();
             break;
         case "2":
             //Todos anzeigen lassen
             Console.WriteLine("Du hast folgende Aufgaben:");
 
-            printListItems();
+            PrintListItems();
 
-            returnToMenu();
+            ReturnToMenu();
             break;
         case "3":
             //Löschen
 
-            printListItems();
+            PrintListItems();
 
             int todoIndex = getIndex("Welches Todo möchtest du löschen?");
 
@@ -70,12 +70,12 @@ do
 
             Console.WriteLine("Todo erfolgreich gelöscht.");
 
-            returnToMenu();
+            ReturnToMenu();
             break;
         case "4":
             //Updaten eines Todos (verändern des strings)
 
-            printListItems();
+            PrintListItems();
 
             int Index = getIndex("Welches Todo möchtest du anpassen?");
 
@@ -86,7 +86,7 @@ do
 
             Console.WriteLine("Todo-Update erfolgreich:" + todoupdate);
 
-            returnToMenu();
+            ReturnToMenu();
             break;
     }
 } while (true);
@@ -97,7 +97,7 @@ Function argument: int myFunc(void) -- the function takes nothing.
 
 Function return value: void myFunc(int) -- the function returns nothing
  */
-void printListItems()
+void PrintListItems()   //kein static, weil gehört zu Objekt?
 {
     for (int i = 0; i < todos.Count; i++)
     {
@@ -105,7 +105,7 @@ void printListItems()
     }
 }
 
-void returnToMenu()
+static void ReturnToMenu()
 {
     Console.WriteLine("Drücke <Enter> um zurück ins Menü zu kommen.");
     Console.ReadKey();
