@@ -20,7 +20,7 @@ static void Start()
 // -> printListItems()
 //Was könnten weitere nützliche Funktionen für unsere App sein?
 
-//Funktion für "Drücke Enter um ins Menü zurückzukehren
+//Funktion für "Drücke Enter um ins Menü zurückzukehren?
 // -> returnToMenu()
 
 //Funktion für den Start?
@@ -53,16 +53,14 @@ do
             break;
         case "2":
             //Todos anzeigen lassen
-            Console.WriteLine("Du hast folgende Aufgaben:");
-
-            PrintListItems();
+            PrintListItems("Du hast folgende Todos:");
 
             ReturnToMenu();
             break;
         case "3":
             //Löschen
 
-            PrintListItems();
+            PrintListItems("Du hast folgende Todos:");
 
             int todoIndex = getIndex("Welches Todo möchtest du löschen?");
 
@@ -75,7 +73,7 @@ do
         case "4":
             //Updaten eines Todos (verändern des strings)
 
-            PrintListItems();
+            PrintListItems("Du hast folgende Todos:");
 
             int Index = getIndex("Welches Todo möchtest du anpassen?");
 
@@ -97,8 +95,9 @@ Function argument: int myFunc(void) -- the function takes nothing.
 
 Function return value: void myFunc(int) -- the function returns nothing
  */
-void PrintListItems()   //kein static, weil gehört zu Objekt?
+void PrintListItems(string prompt)   //kein static, weil gehört zu Objekt?
 {
+    Console.WriteLine(prompt);
     for (int i = 0; i < todos.Count; i++)
     {
         Console.WriteLine($"\t{i}. {todos[i]}");
