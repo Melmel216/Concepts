@@ -8,7 +8,7 @@ int getIndex(string prompt)     //Funktionssignatur
     return number;
 }
 
-static void Start()
+void Start()
 {
     Console.Clear();
     Console.WriteLine("Was möchtest du tun?");
@@ -64,10 +64,11 @@ do
 
             int todoIndex = getIndex("Welches Todo möchtest du löschen?");
 
+            string todoToRemove = todos[todoIndex];
             todos.RemoveAt(todoIndex);
 
-            Console.WriteLine("Todo erfolgreich gelöscht.");
-
+            Console.WriteLine($"GELÖSCHT:  {todoToRemove}");
+            PrintListItems("Aktualisierte Todo-Liste:");
             ReturnToMenu();
             break;
         case "4":
@@ -82,7 +83,7 @@ do
             var todoupdate = Console.ReadLine();
             todos[Index] = todoupdate;
 
-            Console.WriteLine("Todo-Update erfolgreich:" + todoupdate);
+            Console.WriteLine("Text verändert:" + todoupdate);
 
             ReturnToMenu();
             break;
@@ -91,7 +92,7 @@ do
 
 /*
 void => no type
-Function argument: int myFunc(void) -- the function takes nothing.
+Function argument: int myFunc(void) -- the function takes nothing. void kann man hier weglassen
 
 Function return value: void myFunc(int) -- the function returns nothing
  */
@@ -104,7 +105,7 @@ void PrintListItems(string prompt)   //kein static, weil gehört zu Objekt?
     }
 }
 
-static void ReturnToMenu()
+void ReturnToMenu()
 {
     Console.WriteLine("Drücke <Enter> um zurück ins Menü zu kommen.");
     Console.ReadKey();
