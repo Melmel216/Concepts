@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Channels;
 using System.Threading.Tasks;
 
 namespace Aufgaben
@@ -12,11 +13,14 @@ namespace Aufgaben
         /// Eine Funktion, welche eine Sammlung und ein gesuchtes Element übergeben bekommt, 
         /// und den entsprechenden Index des Elements im Array zurück gibt.
         /// </summary>
-        internal static void FindIndex()
+        internal static int FindIndex(List<int> numbers, int query)
         {
             
-
-            Console.WriteLine("FIND INDEX");
+            foreach (int i in numbers)
+            {
+                if (numbers[i] == query) return i;
+            }
+            return -1;
         }
     }
 }
