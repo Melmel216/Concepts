@@ -10,12 +10,18 @@
 
             Example.Test();
             Sammlungen.FindIndex(numbers, query);
-                       
 
-            //Aufgabe: Find Index
-            var index = Sammlungen.FindIndex(numbers, query); //wenn query 6, sollte 
-            //Index gleich 5 sein
-            Console.WriteLine(index);
+
+            // Aufgabe: Find Index
+            var index = Sammlungen.FindIndex(numbers, query); // wenn query 6, sollte index = 5
+            Console.WriteLine($"FindIndex Test1; Sollte 5; Ist {index}"); // sollte 5 sein
+                                                                          // Find Index mit 1.000.000 Elementen in Liste
+            var manyNumbers = Sammlungen.GenerateNumbers(1_000_000_000);
+            var manyNumbersQuery = 999_999_999;
+            Console.WriteLine(manyNumbers.Count);
+            var manyNumbersIndex = Sammlungen.FindIndexAlt(manyNumbers, manyNumbersQuery);
+            Console.WriteLine($"FindIndex ManyNumbers; Sollte 999_999_999; Ist {manyNumbersIndex}"); // sollte 5 sein
+
 
 
             //Aufgaben Temperature
