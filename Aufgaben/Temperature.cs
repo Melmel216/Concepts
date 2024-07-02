@@ -29,15 +29,15 @@ namespace Aufgaben
         //Aufgabe 2:
         internal static double TemperaturDurchschnitt(List<int> Gradzahlen)
         {
-            double j = 0;
+            double summe = 0;
             double durchschnitt;
 
             for (int i = 0; i < Gradzahlen.Count; i++)
             {
-                j = j + Gradzahlen[i];
+                summe = summe + Gradzahlen[i];
             }
 
-            durchschnitt = j / Gradzahlen.Count;
+            durchschnitt = summe / Gradzahlen.Count;
             
             return durchschnitt;
         }
