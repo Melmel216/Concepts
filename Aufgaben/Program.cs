@@ -12,43 +12,49 @@
             Sammlungen.FindIndex(numbers, query);
 
 
-            // Aufgabe: Find Index
-            var index = Sammlungen.FindIndex(numbers, query); // wenn query 6, sollte index = 5
-            Console.WriteLine($"FindIndex Test1; Sollte 5; Ist {index}"); // sollte 5 sein
-                                                                          // Find Index mit 1.000.000 Elementen in Liste
-            var manyNumbers = Sammlungen.GenerateNumbers(1_000_000_000);
-            var manyNumbersQuery = 999_999_999;
-            Console.WriteLine(manyNumbers.Count);
-            var manyNumbersIndex = Sammlungen.FindIndexAlt(manyNumbers, manyNumbersQuery);
-            Console.WriteLine($"FindIndex ManyNumbers; Sollte 999_999_999; Ist {manyNumbersIndex}"); // sollte 5 sein
+            //// Aufgabe: Find Index
+            /// Optimized Version:
+            /// 
+            var index = Sammlungen.FindIndexOptimized(numbers, query);
+            Console.WriteLine($"FindIndexOptimized Test 1; Ist {index}, Sollte 5 sein");
+
+
+            //var index = Sammlungen.FindIndex(numbers, query); // wenn query 6, sollte index = 5
+            //Console.WriteLine($"FindIndex Test1; Sollte 5; Ist {index}"); // sollte 5 sein
+            //                                                              // Find Index mit 1.000.000 Elementen in Liste
+            //var manyNumbers = Sammlungen.GenerateNumbers(1_000_000_000);
+            //var manyNumbersQuery = 999_999_999;
+            //Console.WriteLine(manyNumbers.Count);
+            //var manyNumbersIndex = Sammlungen.FindIndexAlt(manyNumbers, manyNumbersQuery);
+            //Console.WriteLine($"FindIndex ManyNumbers; Sollte 999_999_999; Ist {manyNumbersIndex}"); // sollte 5 sein
 
 
 
-            //Aufgaben Temperature
+            ////Aufgaben Temperature
 
-            //Aufgabe 1:
-            Console.WriteLine("Aufgabe Temperature 1:");
+            ////Aufgabe 1:
+            //Console.WriteLine("Aufgabe Temperature 1:");
 
-            List<int> Gradzahlen = new() { 20, 22, 19, 24, 21, 18, 25 };
-            int schwelle = 21;
+            //List<int> Gradzahlen = new() { 20, 22, 19, 24, 21, 18, 25 };
+            //int schwelle = 21;
 
-            List<int> IndexListe = new();
+            //List<int> IndexListe = new();
 
-            IndexListe = Temperature.TageÜberSchwelle(Gradzahlen, schwelle);
+            //IndexListe = Temperature.TageÜberSchwelle(Gradzahlen, schwelle);
             
-            for (int i = 0; i < IndexListe.Count; i++)
-            {
-                Console.WriteLine(IndexListe[i]);
-            }
+            //for (int i = 0; i < IndexListe.Count; i++)
+            //{
+            //    Console.WriteLine(IndexListe[i]);
+            //}
 
-            Console.WriteLine("");
+            //Console.WriteLine("");
 
-            //Aufgabe 2:
-            Console.WriteLine("Aufgabe Temperature 2:");
+            ////Aufgabe 2:
+            //Console.WriteLine("Aufgabe Temperature 2:");
 
-            double ergebnis = Temperature.TemperaturDurchschnitt(Gradzahlen);
+            //double ergebnis = Temperature.TemperaturDurchschnitt(Gradzahlen);
             
-            Console.WriteLine(ergebnis);
+            //Console.WriteLine(ergebnis);
 
         }
 

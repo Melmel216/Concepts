@@ -10,8 +10,31 @@ namespace Aufgaben
     internal static class Sammlungen
     {
         // FindIndex Optimized
+
         internal static int FindIndexOptimized(List<int> numbers, int query)
         {
+            int low = 0;
+            int high = numbers.Count - 1;
+            int midIndex;
+            //int midIndex = (numbers.Count / 2) - 1; //Index der Zahl in der Mitte
+            //int midZahl = numbers[midIndex]; //Zahl in der Mitte
+            
+            while (high >= low)  //(low != high) sieht toll aus, klappt aber nicht wenn Count = gerade Zahl
+            {
+                midIndex = (high + low) / 2;
+                if (numbers[midIndex] == query) 
+                  
+                    return midIndex;
+                
+                else if (numbers[midIndex] < query)
+                {
+                    low = midIndex + 1;
+                }
+                else
+                {
+                    high = midIndex - 1;
+                }
+            }
             return -1;
         }
 
