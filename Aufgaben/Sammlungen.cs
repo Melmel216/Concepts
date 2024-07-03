@@ -75,6 +75,98 @@ namespace Aufgaben
                 numbers.Add(i);
             return numbers;
         }
+
+
+        /// <summary>
+        /// Eine Funktion, welche eine Liste mit Integers bekommt, und in der Konsole 
+        /// die Häufigkeit jedes Elements druckt.
+        /// Beispiel
+        /// Input: [1,2,3,3,5,2,-10,-10]
+        /// Output: 
+        /// Zahl 1: 1
+        /// Zahl 2: 2
+        /// Zahl 3: 2
+        /// Zahl 5: 1
+        /// Zahl -10: 2
+        /// 
+        /// </summary>
+        internal static void AusgabeHäufigkeit(List<int> ZahlenListe)
+        {
+            List<int> ErgebnisListe = new();
+
+            
+            foreach (int zahl in ZahlenListe)
+            {
+                bool nichtenthalten = true;
+                int häufigkeit = 0;
+
+                for (int j = 0;j < ErgebnisListe.Count; j++)
+                {
+                    if (zahl == ErgebnisListe[j])
+                    {
+                        nichtenthalten = false;
+                        break;
+                    }
+                }
+                if(nichtenthalten)
+                {
+                    for (int i = 0; i < ZahlenListe.Count; i++)
+                    {
+                        if (zahl == ZahlenListe[i])
+                        {
+                            häufigkeit = häufigkeit + 1;
+                        }
+                    }
+                    ErgebnisListe.Add(zahl);
+                    Console.WriteLine($"Zahl {zahl}: {häufigkeit}");
+                }
+            }
+        }
+            //Fehlversuch: foreach(int zahl in ZahlenListe)
+            //{
+            //    int häufigkeit = 0;
+            //    bool nichtenthalten = true;
+            //    for (int i = 0; i < ZahlenListe.Count; i++)
+            //    {
+            //        for(int j = 0; j < ErgebnisListe.Count; j++)
+            //        {
+            //            if (zahl == ErgebnisListe[j])
+            //            {
+            //                nichtenthalten = false;
+            //            }
+            //        if (nichtenthalten)
+            //            {
+            //                if (zahl == ZahlenListe[i])
+            //                {
+            //                    häufigkeit = häufigkeit + 1;
+            //                }
+            //            }
+            //        }
+            //    }
+            //ErgebnisListe.Add(zahl);
+            //Console.WriteLine($"Zahl {zahl}: {häufigkeit}");
+
+            //}
+       
+        
+        /// <summary>
+        /// Eine Funktion, welche einen Weihnachtsbaum in der Konsole druckt. 
+        /// Input: wie gewünscht (eventuell Höhe des Baums)
+        /// Output (Console.WriteLine()): 
+        ///    #
+        ///   ###
+        ///  #####
+        /// #######
+        ///    #
+        /// </summary>
+        internal static void BaumBauer()
+        {
+            Console.WriteLine("    #");
+            Console.WriteLine("   ###");
+            Console.WriteLine("  #####");
+            Console.WriteLine(" #######");
+            Console.WriteLine("    #");
+        }
     }
 }
 

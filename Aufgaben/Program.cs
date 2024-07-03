@@ -5,18 +5,18 @@
         static void Main(string[] args)
         {
 
-            List<int> numbers = new() { 1, 2, 3, 4, 5, 6, 7 };
-            int query = 6;
+            //List<int> numbers = new() { 1, 2, 3, 4, 5, 6, 7 };
+            //int query = 6;
 
-            Example.Test();
-            Sammlungen.FindIndex(numbers, query);
+            //Example.Test();
+            //Sammlungen.FindIndex(numbers, query);
 
 
             //// Aufgabe: Find Index
             /// Optimized Version:
             /// 
-            var index = Sammlungen.FindIndexOptimized(numbers, query);
-            Console.WriteLine($"FindIndexOptimized Test 1; Ist {index}, Sollte 5 sein");
+            //var index = Sammlungen.FindIndexOptimized(numbers, query);
+            //Console.WriteLine($"FindIndexOptimized Test 1; Ist {index}, Sollte 5 sein");
 
 
             //var index = Sammlungen.FindIndex(numbers, query); // wenn query 6, sollte index = 5
@@ -56,7 +56,19 @@
             
             //Console.WriteLine(ergebnis);
 
+
+            //Aufgabe Häufigkeit Zahl in Liste
+
+            List<int> ZahlenListe = new() {1, 2, 2, 3, 4, 4, 4, 5, 6, 6 };
+
+            Console.WriteLine("Aufgabe Häufigkeit Zahl in Liste:");
+            Sammlungen.AusgabeHäufigkeit(ZahlenListe);
+
+            Console.WriteLine("Aufgabe Baum:");
+            Sammlungen.BaumBauer();
         }
+
+
 
 
         
