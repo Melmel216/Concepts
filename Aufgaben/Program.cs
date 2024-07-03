@@ -66,11 +66,42 @@
 
             Console.WriteLine("Aufgabe Baum:");
             Sammlungen.BaumBauer();
+
+            //Aufgaben Mittwoch:
+
+            Console.WriteLine("Aufgabe SmallestValue:");
+            Console.WriteLine("Sollte sein: 1");
+
+            int[] numbers = { 5, 6, 8, 12, 34, 2, 1, 7, 9};
+
+            int ergebnis = Sammlungen.FindSmallestValue(numbers);
+            Console.WriteLine(ergebnis);
+
+            //Aufgabe OnlyEven:
+
+            Console.WriteLine("Aufgabe OnlyEven:");
+            Console.WriteLine("Sollte sein: 6, 8, 12, 34, 2");
+
+            List<int> OnlyEven = new();
+
+            OnlyEven = Sammlungen.OnlyEven(numbers); //nutzt den numbers Array von Aufgabe SmallestValue oben
+
+            foreach (int i in OnlyEven)
+            {
+                Console.WriteLine(i);
+            }
+
+            //for (int i = 0; i < OnlyEven.Count; i++)
+            //{
+            //    Console.WriteLine(OnlyEven[i]);
+            //}
+            
+
         }
 
 
 
 
-        
+
     }
 }
