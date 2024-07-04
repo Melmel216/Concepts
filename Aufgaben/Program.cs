@@ -64,10 +64,14 @@
             Console.WriteLine("Aufgabe Häufigkeit Zahl in Liste:");
             Sammlungen.AusgabeHäufigkeit(ZahlenListe);
 
+            //Aufgabe BaumBauer
+
             Console.WriteLine("Aufgabe Baum:");
             Sammlungen.BaumBauer();
 
             //Aufgaben Mittwoch:
+
+            //SmallestValue:
 
             Console.WriteLine("Aufgabe SmallestValue:");
             Console.WriteLine("Sollte sein: 1");
@@ -78,6 +82,8 @@
             int ergebnis = Sammlungen.FindSmallestValue(numbers);
             Console.WriteLine(ergebnis);
 
+
+
             //Aufgabe OnlyEven:
 
             Console.WriteLine("Aufgabe OnlyEven:");
@@ -86,7 +92,7 @@
 
             List<int> OnlyEven = new();
 
-            OnlyEven = Sammlungen.OnlyEven(numbers); //nutzt den numbers Array von Aufgabe SmallestValue oben
+            OnlyEven = Sammlungen.OnlyEven(numbers); //nutzt den  int[] numbers = { 5, 6, 8, 12, 34, 2, 1, 7, 9}; von Aufgabe SmallestValue oben
 
             foreach (int i in OnlyEven)
             {
@@ -100,15 +106,15 @@
 
             //StringAufgaben:
 
-            Console.WriteLine("String-Aufgaben:\n");
+            //Console.WriteLine("String-Aufgaben:\n");
 
-            StringAufgaben.PrintBackwards("Lagerregal");
-            StringAufgaben.PrintBackwards("Hamster");
+            //StringAufgaben.PrintBackwards("Lagerregal");
+            //StringAufgaben.PrintBackwards("Hamster");
 
 
-            Console.WriteLine("Wortzählung:\n");
-            Console.WriteLine(StringAufgaben.CountWords("Hier könnte Ihre Werbung stehen!"));
-            Console.WriteLine(StringAufgaben.CountWords("lorem ipsum dolor est")); 
+            //Console.WriteLine("Wortzählung:\n");
+            //Console.WriteLine(StringAufgaben.CountWords("Hier könnte Ihre Werbung stehen!"));
+            //Console.WriteLine(StringAufgaben.CountWords("lorem ipsum dolor est")); 
         }
 
 
