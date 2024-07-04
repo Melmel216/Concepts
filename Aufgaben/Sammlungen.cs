@@ -266,7 +266,7 @@ namespace Aufgaben
 
             foreach (int i in numbers)
             {
-                if ((i / 2) * 2 == i)
+                if ((i / 2) * 2 == i) //funktioniert weil integer?
                 {
                     evenList.Add(i);
                 }
