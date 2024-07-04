@@ -98,9 +98,12 @@
             //    Console.WriteLine(OnlyEven[i]);
             //}
 
-            //Test
-            
+            //StringAufgaben:
 
+            Console.WriteLine("String-Aufgaben:\n");
+
+            StringAufgaben.PrintBackwards("Lagerregal");
+            StringAufgaben.PrintBackwards("Hamster");
         }
 
 

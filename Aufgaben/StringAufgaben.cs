@@ -17,7 +17,17 @@ namespace Aufgaben
         /// Output: "r e t s m a H"
         /// </summary>
         /// <param name="text"></param>
-        internal static void PrintBackwards(string text) { }
+        internal static void PrintBackwards(string text) 
+        {
+            string output = ""; //Wert zugewiesen, sonst Fehler in Schleife
+
+            for (int i = text.Length - 1; i >= 0; i--) //rückwärts
+            {
+                output = output + text[i] + " ";            
+            }
+
+            Console.WriteLine(output);
+        }
 
         /// <summary>
         /// Eine Funktion, welche die Anzahl von Worten in einer beliebigen Zeichenkette zählt.
