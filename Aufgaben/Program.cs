@@ -99,22 +99,25 @@
                 Console.WriteLine(i);
             }
 
-            //for (int i = 0; i < OnlyEven.Count; i++)
-            //{
-            //    Console.WriteLine(OnlyEven[i]);
-            //}
-
-            //StringAufgaben:
-
-            //Console.WriteLine("String-Aufgaben:\n");
-
-            //StringAufgaben.PrintBackwards("Lagerregal");
-            //StringAufgaben.PrintBackwards("Hamster");
+        
 
 
-            //Console.WriteLine("Wortzählung:\n");
-            //Console.WriteLine(StringAufgaben.CountWords("Hier könnte Ihre Werbung stehen!"));
-            //Console.WriteLine(StringAufgaben.CountWords("lorem ipsum dolor est")); 
+
+        //StringAufgaben:
+
+            Console.WriteLine("String-Aufgaben:\n");
+
+            StringAufgaben.PrintBackwards("Lagerregal");
+            StringAufgaben.PrintBackwards("Hamster");
+
+
+
+
+
+            Console.WriteLine("Wortzählung:\n");
+            Console.WriteLine(StringAufgaben.CountWords("Hier könnte Ihre Werbung stehen!"));
+            Console.WriteLine(StringAufgaben.CountWords("lorem ipsum dolor est"));
+
         }
 
 

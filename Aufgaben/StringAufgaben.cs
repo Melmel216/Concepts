@@ -19,7 +19,7 @@ namespace Aufgaben
         /// <param name="text"></param>
         internal static void PrintBackwards(string text) 
         {
-            string output = ""; //Wert zugewiesen, sonst Fehler in Schleife
+            string output = ""; //Wert zuweisen, sonst Fehler in Schleife
 
             for (int i = text.Length - 1; i >= 0; i--) //rückwärts
             {
