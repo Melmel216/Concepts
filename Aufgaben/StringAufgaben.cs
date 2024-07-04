@@ -39,6 +39,18 @@ namespace Aufgaben
         /// </summary>
         /// <param name="text"></param>
         /// <returns></returns>
-        internal static int CountWords(string text) { return 0; }
+        internal static int CountWords(string text) 
+        { 
+            int anzahl = 0;
+
+            for (int i = 0; i < text.Length; i++)
+            {
+                if (text[i] != ' ' && (i == 0 || text[i - 1] == ' ')) //ohne i == 0 -> outofrange Fehler, ohne den Teil in der Klammer werden die Buchstaben gezählt
+                { 
+                    anzahl= anzahl + 1;
+                }
+            }
+            return anzahl; 
+        }
     }
 }

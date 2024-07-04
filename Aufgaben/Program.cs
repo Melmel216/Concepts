@@ -104,6 +104,11 @@
 
             StringAufgaben.PrintBackwards("Lagerregal");
             StringAufgaben.PrintBackwards("Hamster");
+
+
+            Console.WriteLine("Wortzählung:\n");
+            Console.WriteLine(StringAufgaben.CountWords("Hier könnte Ihre Werbung stehen!"));
+            Console.WriteLine(StringAufgaben.CountWords("lorem ipsum dolor est")); 
         }
 
 
