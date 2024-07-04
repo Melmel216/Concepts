@@ -274,7 +274,29 @@ namespace Aufgaben
             return evenList;
         }
 
-        
+        /// <summary>
+        /// Eine Funktion, welche true zurückgibt, wenn ein (oder mehrere) Werte doppelt vorkommen.
+        /// Examples:
+        /// <list type="bullet">
+        /// <item>
+        /// Input: [0,1,2,3]
+        /// Output: False
+        /// </item>
+        /// <item>
+        /// Input: [0,1,2,2,3,4,5]
+        /// Output: True
+        /// </item>
+        /// <item>
+        /// Input: [0,1,1,2,3,4,4]
+        /// Output: True
+        /// </item>
+        /// </list>
+        /// </summary>
+        /// <param name="numbers"></param>
+        /// <returns></returns>
+        internal static bool ContainsDuplicates(int[] numbers) { return false; }
+
+
 
     }
 }
