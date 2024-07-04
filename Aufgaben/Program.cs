@@ -71,6 +71,7 @@
 
             Console.WriteLine("Aufgabe SmallestValue:");
             Console.WriteLine("Sollte sein: 1");
+            Console.WriteLine("Ergebnis:");
 
             int[] numbers = { 5, 6, 8, 12, 34, 2, 1, 7, 9};
 
@@ -81,6 +82,7 @@
 
             Console.WriteLine("Aufgabe OnlyEven:");
             Console.WriteLine("Sollte sein: 6, 8, 12, 34, 2");
+            Console.WriteLine("Ergebnis:");
 
             List<int> OnlyEven = new();
 
