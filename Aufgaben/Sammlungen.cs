@@ -294,7 +294,26 @@ namespace Aufgaben
         /// </summary>
         /// <param name="numbers"></param>
         /// <returns></returns>
-        internal static bool ContainsDuplicates(int[] numbers) { return false; }
+        internal static bool ContainsDuplicates(int[] numbers) 
+        {
+            //eine Schleife, die durch numbers iteriert (for i)
+            //mit einer zweiten Schleife (for j) das i mit den weiteren Zahlen von numbers vergleichen
+            //wenn gleich, dann bool = true
+
+            bool containsDuplicate = false;
+
+            for (int i = 0; i < numbers.Length; i++) //geht durch numbers
+            {
+                for (int j = i + 1; j < numbers.Length; j++) //i bleibt hier gleich, j zählt hoch durch numbers 
+                {
+                    if (numbers[i] == numbers[j])
+                    {
+                        containsDuplicate = true;
+                    }
+                }
+            }
+            return containsDuplicate; 
+        }
 
 
 

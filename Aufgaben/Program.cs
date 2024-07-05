@@ -136,6 +136,19 @@
 
             Console.WriteLine("Ergebnis2 von 'H,a: l! l? o!' sollte sein: Vokale = 2, Konsonanten = 3");
             StringAufgaben.PrintConsonantAndVowels("H,a: l! l? o!");
+
+            Console.WriteLine();
+
+            //Aufgabe ContainsDuplicates aus Sammlungen
+            Console.WriteLine("Aufgabe ContainsDuplicates:\n");
+            int[] duplicateTest1 = { 0, 1, 2, 3};
+            int[] duplicateTest2 = { 0, 1, 1, 2, 3, 4};
+
+            Console.WriteLine("Test1, Ergebnis sollte 'false' sein:");
+            Console.WriteLine(Sammlungen.ContainsDuplicates(duplicateTest1));
+            Console.WriteLine("Test2, Ergebnis sollte 'true' sein:");
+            Console.WriteLine(Sammlungen.ContainsDuplicates(duplicateTest2));
+
         }
 
 
