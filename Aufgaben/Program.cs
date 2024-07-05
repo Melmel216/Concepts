@@ -149,6 +149,8 @@
             Console.WriteLine("Test2, Ergebnis sollte 'true' sein:");
             Console.WriteLine(Sammlungen.ContainsDuplicates(duplicateTest2));
 
+            Console.WriteLine("Aufgabe DiamondBauer:\n");
+            Sammlungen.DiamondBauer(4);
         }
 
 

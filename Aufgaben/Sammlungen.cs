@@ -230,7 +230,49 @@ namespace Aufgaben
         ///    #
         /// DiamondBauer();
         /// </summary>
-        internal static void DiamondBauer() { }
+        internal static void DiamondBauer(int height) 
+        {
+            int hashNumber = 1;
+            int whitespaceAmount = height; //sonst passt Mitte nicht
+            for (int i = 0; i < height; i++) // Eine Zeile
+            {
+                // Whitespace vor dem #
+                for (int j = 0; j < whitespaceAmount; j++)
+                {
+                    Console.Write(" ");
+                }
+                // hashtags => #
+                for (int j = 0; j < hashNumber; j++)
+                {
+                    Console.Write("#");
+                }
+
+                // Nach jeder Zeile
+                hashNumber += 2;
+                whitespaceAmount--;
+
+                Console.WriteLine();
+            }
+            for (int i = height; i >= 0; i--) // Eine Zeile
+            {
+                // Whitespace vor dem #
+                for (int j = 0; j < whitespaceAmount; j++)
+                {
+                    Console.Write(" ");
+                }
+                // hashtags => #
+                for (int j = 0; j < hashNumber; j++)
+                {
+                    Console.Write("#");
+                }
+
+                // Nach jeder Zeile
+                hashNumber -= 2;
+                whitespaceAmount++;
+
+                Console.WriteLine();
+            }
+        }
 
 
         /// <summary>
