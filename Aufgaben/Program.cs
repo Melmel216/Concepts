@@ -129,6 +129,13 @@
             int charsOfLastWordCount2 = StringAufgaben.CountCharsOfLastWordInText("Döner mit Scharf");
             Console.WriteLine(charsOfLastWordCount2);
 
+            //Aufgabe PrintConsonantAndVowels
+            Console.WriteLine("Aufgabe Konsonanten und Vokale:\n");
+            Console.WriteLine("Ergebnis von 'Hallo zusammen! Bald ist Wochenende!'\nsollte sein: Vokale = 11, Konsonanten = 19");
+            StringAufgaben.PrintConsonantAndVowels("Hallo zusammen! Bald ist Wochenende!");
+
+            Console.WriteLine("Ergebnis2 von 'H,a: l! l? o!' sollte sein: Vokale = 2, Konsonanten = 3");
+            StringAufgaben.PrintConsonantAndVowels("H,a: l! l? o!");
         }
 
 

@@ -99,6 +99,29 @@ namespace Aufgaben
         /// HINT: Sind Leerzeichen Vokale oder Konsonanten?
         /// </summary>
         /// <param name="text"></param>
-        internal static void PrintConsonantAndVowels(string text) { }
+        internal static void PrintConsonantAndVowels(string text) 
+        {
+            int vowelscount = 0;
+            int consonantscount = 0;
+            string vowels = "aeiouAEIOU";
+            string consonants = "bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ";
+            string other = ".,!?:;()[]{}/";
+
+            foreach (char c in text)
+            {
+                if (c == ' ' || other.Contains(c)) continue;
+
+                else if (vowels.Contains(c))
+                {
+                    vowelscount++;
+                }
+                else if (consonants.Contains(c))
+                {
+                    consonantscount++;
+                }
+            }
+            Console.WriteLine($"Anzahl Vokale: {vowelscount}");
+            Console.WriteLine($"Anzahl Konsonanten: {consonantscount}");
+        }
     }
 }
