@@ -118,6 +118,17 @@
             Console.WriteLine(StringAufgaben.CountWords("Hier könnte Ihre Werbung stehen!"));
             Console.WriteLine(StringAufgaben.CountWords("lorem ipsum dolor est"));
 
+
+            //CountCharsOfLastWordInText
+
+            Console.WriteLine("String-Aufgabe CountCharsOfLastWordInText:\n");
+
+            int charsOfLastWordCount = StringAufgaben.CountCharsOfLastWordInText("Mein Hamster hat meine Hausis gefressen");
+            Console.WriteLine(charsOfLastWordCount);
+
+            int charsOfLastWordCount2 = StringAufgaben.CountCharsOfLastWordInText("Döner mit Scharf");
+            Console.WriteLine(charsOfLastWordCount2);
+
         }
 
 
