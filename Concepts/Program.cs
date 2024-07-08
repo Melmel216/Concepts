@@ -8,7 +8,7 @@ Person person1 = new Person(); //Konstruktoraufruf
 
 person1.Vorname = "Michael";
 person1.Nachname = "Lutz";
-person1.Greet("Hallo!");
+person1.Greet("Hallo!"); //Kann Fehler verursachen, wenn Vorname und Nachname nicht initialisiert sind. Vorname und Nachname müssen vorher gesetzt sein
 
 Console.WriteLine(person1); //Druckt Namespace.Klasse
 
