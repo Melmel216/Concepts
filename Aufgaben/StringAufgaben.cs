@@ -107,15 +107,15 @@ namespace Aufgaben
             string consonants = "bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ";
             string other = ".,!?:;()[]{}/";
 
-            foreach (char c in text)
+            foreach (char i in text)
             {
-                if (c == ' ' || other.Contains(c)) continue;
+                if (i == ' ' || other.Contains(i)) continue;
 
-                else if (vowels.Contains(c))
+                else if (vowels.Contains(i))
                 {
                     vowelscount++;
                 }
-                else if (consonants.Contains(c))
+                else if (consonants.Contains(i))
                 {
                     consonantscount++;
                 }
