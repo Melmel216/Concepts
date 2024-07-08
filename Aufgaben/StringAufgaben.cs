@@ -103,11 +103,11 @@ namespace Aufgaben
         {
             int vowelscount = 0;
             int consonantscount = 0;
-            string vowels = "aeiouAEIOU";
-            string consonants = "bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ";
+            string vowels = "aeiouäöü";
+            string consonants = "bcdfghjklmnpqrstvwxyz";
             string other = ".,!?:;()[]{}/";
 
-            foreach (char i in text)
+            foreach (char i in text.ToLower())
             {
                 if (i == ' ' || other.Contains(i)) continue;
 
