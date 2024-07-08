@@ -131,8 +131,8 @@
 
             //Aufgabe PrintConsonantAndVowels
             Console.WriteLine("Aufgabe Konsonanten und Vokale:\n");
-            Console.WriteLine("Ergebnis von 'Hallo zusammen! Bald ist Wochenende!'\nsollte sein: Vokale = 11, Konsonanten = 19");
-            StringAufgaben.PrintConsonantAndVowels("Hallo zusammen! Bald ist Wochenende!");
+            Console.WriteLine("Ergebnis von 'Hallo zusammen!'\nsollte sein: Vokale = 5, Konsonanten = 8");
+            StringAufgaben.PrintConsonantAndVowels("Hallo zusammen!");
 
             Console.WriteLine("Ergebnis2 von 'H,a: l! l? o!' sollte sein: Vokale = 2, Konsonanten = 3");
             StringAufgaben.PrintConsonantAndVowels("H,a: l! l? o!");
