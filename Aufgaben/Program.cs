@@ -171,6 +171,7 @@
 
 
             Console.WriteLine();
+
             //Aufgabe Car
 
             //Instanzen erstellen:
@@ -196,7 +197,6 @@
             Console.WriteLine(car3.GetDescription());
             Console.WriteLine("Nach " + drivenKm + " weiteren gefahrenen Kilometern\nbeträgt der neue Kilometerstand: " + car3.Drive(drivenKm) + "km");
             Console.WriteLine("Das Auto ist " + car3.Age() + " Jahre alt.\n");
-
         }
 
     }
