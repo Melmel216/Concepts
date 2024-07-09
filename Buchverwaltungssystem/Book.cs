@@ -28,7 +28,7 @@ namespace Buchverwaltungssystem
         //Methoden
         internal string GetDescription()
         {
-            return $"'{Title}' von {Author}, veröffentlicht im Jahr {PublicationYear} (ISBN: {ISBN})";
+            return $"\"{Title}\" von {Author}, veröffentlicht im Jahr {PublicationYear} (ISBN: {ISBN})";
         }
     }
 }
