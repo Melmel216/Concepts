@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace Taskmaster
 {
-    internal class Task
+    public class Tasky
     {
         // Eigenschaften kommen hier hin:
 
@@ -17,12 +12,11 @@ namespace Taskmaster
 
         // Konstruktor soll hier implementiert werden:
 
-        public Task(string title, string description, DateTime dueDate, bool isCompleted)
+        public Tasky(string title, string description, DateTime dueDate)
         {
             Title = title;
             Description = description;
             DueDate = dueDate;
-            IsCompleted = isCompleted;
         }
 
         // Beschreibung der Aufgabe
