@@ -31,16 +31,22 @@ namespace Fahrzeugverwaltungssystem
             return $"{Brand} {Model}, Jahr {Year} mit {Mileage} km gefahren.";
         }
 
-        internal int Drive(int drivenkm)
+        internal int Drive(int drivenKm)
         {
-            int newMileage = drivenkm + Mileage;
+            int newMileage = drivenKm + Mileage;
             return newMileage;
         }
 
+        //internal void Drive(int drivenMiles)
+        //{
+        //  Mileage += drivenMiles;     (oder: Mileage = Mileage + drivenMiles)
+        //}
+        // Aufruf dann car1.Drive(50);  -> weil 50 km gefahren
+
         internal int Age()
         {
-            int carAge = DateTime.Now.Year - Year;
-            return carAge;
+            int carAge = DateTime.Now.Year - Year;   //besser:  
+            return carAge;                  //return DateTime.Now.Year - Year
         }
 
     }
