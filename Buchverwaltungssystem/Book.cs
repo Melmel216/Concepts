@@ -1,9 +1,15 @@
-﻿namespace Aufgaben
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Buchverwaltungssystem
 {
     internal class Book
     {
         //Properties
-        internal string Title {  get; set; }
+        internal string Title { get; set; }
         internal string Author { get; set; }
         internal int PublicationYear { get; set; }
         internal string ISBN { get; set; }
@@ -22,8 +28,7 @@
         //Methoden
         internal string GetDescription()
         {
-            return $"'{Title}' von {Author}, veröffentlicht im Jahr { PublicationYear} (ISBN: {ISBN})";
+            return $"'{Title}' von {Author}, veröffentlicht im Jahr {PublicationYear} (ISBN: {ISBN})";
         }
-       
     }
 }
