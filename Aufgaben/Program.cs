@@ -154,49 +154,49 @@
             //}
 
 
-            // KlassenAufgaben
+            //// KlassenAufgaben
             
-            //Book-Aufgabe
+            ////Book-Aufgabe
 
-            //Instanzen erstellen:
+            ////Instanzen erstellen:
 
-            Book book1 = new Book("Storm Front", "Jim Butcher", 2000, "9783867621113");
-            Book book2 = new Book("Fool Moon", "Jim Butcher", 2000, "9783867621120");
-            Book book3 = new Book("Grave Peril", "Jim Butcher", 2001, "9783867621137");
+            //Book book1 = new Book("Storm Front", "Jim Butcher", 2000, "9783867621113");
+            //Book book2 = new Book("Fool Moon", "Jim Butcher", 2000, "9783867621120");
+            //Book book3 = new Book("Grave Peril", "Jim Butcher", 2001, "9783867621137");
 
-            //Aufruf der Methode GetDescription + Ausgabe in der Konsole 
-            Console.WriteLine(book1.GetDescription());
-            Console.WriteLine(book2.GetDescription());
-            Console.WriteLine(book3.GetDescription());
+            ////Aufruf der Methode GetDescription + Ausgabe in der Konsole 
+            //Console.WriteLine(book1.GetDescription());
+            //Console.WriteLine(book2.GetDescription());
+            //Console.WriteLine(book3.GetDescription());
 
 
-            Console.WriteLine();
+            //Console.WriteLine();
 
-            //Aufgabe Car
+            ////Aufgabe Car
 
-            //Instanzen erstellen:
+            ////Instanzen erstellen:
 
-            Car car1 = new Car("Ford", "Mustang", 2018, 23000);
-            Car car2 = new Car("Toyota", "Corolla", 2015, 45000);
-            Car car3 = new Car("BMW", "X5", 2019, 32000);
+            //Car car1 = new Car("Ford", "Mustang", 2018, 23000);
+            //Car car2 = new Car("Toyota", "Corolla", 2015, 45000);
+            //Car car3 = new Car("BMW", "X5", 2019, 32000);
 
-            //Aufruf der Methoden + Ausgabe in der Konsole:
+            ////Aufruf der Methoden + Ausgabe in der Konsole:
 
-            int drivenKm = 2000;
-            //Car1
-            Console.WriteLine(car1.GetDescription());
-            Console.WriteLine("Nach " + drivenKm + " weiteren gefahrenen Kilometern\nbeträgt der neue Kilometerstand: " + car1.Drive(drivenKm) + "km");
-            Console.WriteLine("Das Auto ist " + car1.Age() + " Jahre alt.\n");
+            //int drivenKm = 2000;
+            ////Car1
+            //Console.WriteLine(car1.GetDescription());
+            //Console.WriteLine("Nach " + drivenKm + " weiteren gefahrenen Kilometern\nbeträgt der neue Kilometerstand: " + car1.Drive(drivenKm) + "km");
+            //Console.WriteLine("Das Auto ist " + car1.Age() + " Jahre alt.\n");
 
-            //Car2
-            Console.WriteLine(car2.GetDescription());
-            Console.WriteLine("Nach " + drivenKm + " weiteren gefahrenen Kilometern\nbeträgt der neue Kilometerstand: " + car2.Drive(drivenKm) + "km");
-            Console.WriteLine("Das Auto ist " + car2.Age() + " Jahre alt.\n");
+            ////Car2
+            //Console.WriteLine(car2.GetDescription());
+            //Console.WriteLine("Nach " + drivenKm + " weiteren gefahrenen Kilometern\nbeträgt der neue Kilometerstand: " + car2.Drive(drivenKm) + "km");
+            //Console.WriteLine("Das Auto ist " + car2.Age() + " Jahre alt.\n");
             
-            //Car3
-            Console.WriteLine(car3.GetDescription());
-            Console.WriteLine("Nach " + drivenKm + " weiteren gefahrenen Kilometern\nbeträgt der neue Kilometerstand: " + car3.Drive(drivenKm) + "km");
-            Console.WriteLine("Das Auto ist " + car3.Age() + " Jahre alt.\n");
+            ////Car3
+            //Console.WriteLine(car3.GetDescription());
+            //Console.WriteLine("Nach " + drivenKm + " weiteren gefahrenen Kilometern\nbeträgt der neue Kilometerstand: " + car3.Drive(drivenKm) + "km");
+            //Console.WriteLine("Das Auto ist " + car3.Age() + " Jahre alt.\n");
         }
 
     }
