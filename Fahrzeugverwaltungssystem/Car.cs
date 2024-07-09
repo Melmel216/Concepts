@@ -28,8 +28,7 @@ namespace Fahrzeugverwaltungssystem
 
         internal string GetDescription()
         {
-            string description = ($"{Brand} {Model}, Jahr {Year} mit {Mileage} km gefahren.");
-            return description;
+            return $"{Brand} {Model}, Jahr {Year} mit {Mileage} km gefahren.";
         }
 
         internal int Drive(int drivenkm)
