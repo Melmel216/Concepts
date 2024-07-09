@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TD", "TD\TD.csproj", "{46D1
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aufgaben", "Aufgaben\Aufgaben.csproj", "{1A4AE3B8-9B5E-4B11-BAB3-86299057971A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpenseTracker", "ExpenseTracker\ExpenseTracker.csproj", "{515E6F9A-C22E-4F91-9006-9F150D568D21}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExpenseTracker", "ExpenseTracker\ExpenseTracker.csproj", "{515E6F9A-C22E-4F91-9006-9F150D568D21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Taskmaster", "Taskmaster\Taskmaster.csproj", "{62BA148F-36D7-4A5E-928B-3AE4B6FE6E04}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{515E6F9A-C22E-4F91-9006-9F150D568D21}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{515E6F9A-C22E-4F91-9006-9F150D568D21}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{515E6F9A-C22E-4F91-9006-9F150D568D21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62BA148F-36D7-4A5E-928B-3AE4B6FE6E04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62BA148F-36D7-4A5E-928B-3AE4B6FE6E04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62BA148F-36D7-4A5E-928B-3AE4B6FE6E04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62BA148F-36D7-4A5E-928B-3AE4B6FE6E04}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -24,7 +24,8 @@ namespace Aufgaben
 
         internal string GetDescription()
         {
-            return $"{Brand} {Model}, Jahr {Year} mit {Mileage} km gefahren.";
+            string description = ($"{Brand} {Model}, Jahr {Year} mit {Mileage} km gefahren.");
+            return description;
         }
 
         internal int Drive(int drivenkm)
