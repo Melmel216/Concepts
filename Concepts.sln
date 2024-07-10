@@ -11,11 +11,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aufgaben", "Aufgaben\Aufgab
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExpenseTracker", "ExpenseTracker\ExpenseTracker.csproj", "{515E6F9A-C22E-4F91-9006-9F150D568D21}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Taskmaster", "Taskmaster\Taskmaster.csproj", "{62BA148F-36D7-4A5E-928B-3AE4B6FE6E04}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Taskmaster", "Taskmaster\Taskmaster.csproj", "{62BA148F-36D7-4A5E-928B-3AE4B6FE6E04}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Buchverwaltungssystem", "Buchverwaltungssystem\Buchverwaltungssystem.csproj", "{C704ADCC-172B-4FCD-86A4-C7E47CC76323}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Buchverwaltungssystem", "Buchverwaltungssystem\Buchverwaltungssystem.csproj", "{C704ADCC-172B-4FCD-86A4-C7E47CC76323}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fahrzeugverwaltungssystem", "Fahrzeugverwaltungssystem\Fahrzeugverwaltungssystem.csproj", "{45BDE880-B3BD-417F-A14E-613C32A62E3E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fahrzeugverwaltungssystem", "Fahrzeugverwaltungssystem\Fahrzeugverwaltungssystem.csproj", "{45BDE880-B3BD-417F-A14E-613C32A62E3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticVSInstance", "StaticVSInstance\StaticVSInstance.csproj", "{C1BF2FEC-24F6-45B3-87FD-4863ED9DDBC6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{45BDE880-B3BD-417F-A14E-613C32A62E3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45BDE880-B3BD-417F-A14E-613C32A62E3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45BDE880-B3BD-417F-A14E-613C32A62E3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1BF2FEC-24F6-45B3-87FD-4863ED9DDBC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1BF2FEC-24F6-45B3-87FD-4863ED9DDBC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1BF2FEC-24F6-45B3-87FD-4863ED9DDBC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1BF2FEC-24F6-45B3-87FD-4863ED9DDBC6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
