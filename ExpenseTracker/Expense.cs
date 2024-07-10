@@ -16,5 +16,15 @@
             CreatedAt = DateTime.Now;
         }
 
+        public static decimal ExpensesSum(List<Expense> expenses)
+        {
+            decimal sum = 0;
+
+            for (int i = 0; i < expenses.Count; i++)
+            {
+                sum = sum + expenses[i].Price;
+            }
+            return sum;
+        }
     }
 }

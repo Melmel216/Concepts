@@ -1,7 +1,5 @@
 ﻿
 // Erstelle mehrere Aufgabenobjekte
-
-using System.Threading.Tasks;
 using Taskmaster;
 
 
@@ -18,6 +16,9 @@ Console.WriteLine(task3.GetTaskInfo());
 // Markiere die erste Aufgabe als erledigt
 task1.CompleteTask();
 Console.WriteLine(task1.GetTaskInfo());
+
+task2.CompleteTask();
+Console.WriteLine(task2.GetTaskInfo());
 
 task3.CompleteTask();
 Console.WriteLine(task3.GetTaskInfo());
