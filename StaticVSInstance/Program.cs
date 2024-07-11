@@ -1,18 +1,15 @@
 ﻿using StaticVSInstance;
 
-int numberInput1 = 0;
-int numberInput2 = 0;
-int result = 0;
+decimal numberInput1 = 0;
+decimal numberInput2 = 0;
+decimal result = 0;
 
 do
 {
     Console.Clear();
     Console.WriteLine("Was willst du rechnen?");
-    Console.WriteLine("\t1.Add\n\t2.Subtract\n\t3.Multiply\n\t4.Divide");
+    Console.WriteLine("\t1.Add\n\t2.Subtract\n\t3.Multiply\n\t4.Divide\n\t5.Triangle\n\t6.Circle\n\t7.Rectangle");
     int menuInput = int.Parse(Console.ReadLine());
-
-    numberInput1 = Calculator.GetNumberInput("Gebe die erste Zahl ein:\t");
-    numberInput2 = Calculator.GetNumberInput("Gebe die zweite Zahl ein:\t");
 
     var userSelect = (Operator)menuInput;
     
@@ -29,6 +26,15 @@ do
             break;
         case Operator.Division:
             Calculator.Calculate(numberInput1, numberInput2, Operator.Division);
+            break;
+        case Operator.Triangle:
+            Calculator.CalculateTriangle();
+            break;
+        case Operator.Circle:
+            Calculator.CalculateCircle();
+            break;
+        case Operator.Rectangle:
+            Calculator.CalculateRectangle();
             break;
     }
 } while (true);
