@@ -55,41 +55,53 @@ namespace StaticVSInstance
             return result;
         }
 
-        public static int Add(int numberInput1, int numberInput2)
+        internal enum Operation
         {
-            Count++;
-            var result = numberInput1 + numberInput2;
-            Console.WriteLine($"Das Ergebnis von {numberInput1} + {numberInput2} = {result}");
-            Console.WriteLine($"Du hast {Count} Berechnungen getätigt.");
-            return result;
+            Add = 1,
+            Subtract = 2,
+            Multiply = 3,
+            Divide = 4
         }
 
-        public static int Subtract(int numberInput1, int numberInput2)
-        {
-            Count++;
-            var result = numberInput1 - numberInput2;
-            Console.WriteLine($"Das Ergebnis von {numberInput1} - {numberInput2} = {result}");
-            Console.WriteLine($"Du hast {Count} Berechnungen getätigt.");
-            return result;
-        }
 
-        public static int Multiply(int numberInput1, int numberInput2)
-        {
-            Count++;
-            var result = numberInput1 * numberInput2;
-            Console.WriteLine($"Das Ergebnis von {numberInput1} * {numberInput2} = {result}");
-            Console.WriteLine($"Du hast {Count} Berechnungen getätigt.");
-            return result;
-        }
 
-        public static int Divide(int numberInput1, int numberInput2)
-        {
-            Count++;
-            var result = numberInput1 / numberInput2;
-            Console.WriteLine($"Das Ergebnis von {numberInput1} / {numberInput2} = {result}");
-            Console.WriteLine($"Du hast {Count} Berechnungen getätigt.");
-            return result;
-        }
+
+
+        //public static int Add(int numberInput1, int numberInput2)
+        //{
+        //    Count++;
+        //    var result = numberInput1 + numberInput2;
+        //    Console.WriteLine($"Das Ergebnis von {numberInput1} + {numberInput2} = {result}");
+        //    Console.WriteLine($"Du hast {Count} Berechnungen getätigt.");
+        //    return result;
+        //}
+
+        //public static int Subtract(int numberInput1, int numberInput2)
+        //{
+        //    Count++;
+        //    var result = numberInput1 - numberInput2;
+        //    Console.WriteLine($"Das Ergebnis von {numberInput1} - {numberInput2} = {result}");
+        //    Console.WriteLine($"Du hast {Count} Berechnungen getätigt.");
+        //    return result;
+        //}
+
+        //public static int Multiply(int numberInput1, int numberInput2)
+        //{
+        //    Count++;
+        //    var result = numberInput1 * numberInput2;
+        //    Console.WriteLine($"Das Ergebnis von {numberInput1} * {numberInput2} = {result}");
+        //    Console.WriteLine($"Du hast {Count} Berechnungen getätigt.");
+        //    return result;
+        //}
+
+        //public static int Divide(int numberInput1, int numberInput2)
+        //{
+        //    Count++;
+        //    var result = numberInput1 / numberInput2;
+        //    Console.WriteLine($"Das Ergebnis von {numberInput1} / {numberInput2} = {result}");
+        //    Console.WriteLine($"Du hast {Count} Berechnungen getätigt.");
+        //    return result;
+        //}
 
         /// <summary>
         /// Das hier ist wie Add(), aber wird über die Instanz der Klasse (konkretes Objekt eg. "calc1.AddInstance") aufgerufen. Der InstanceCount ist für jede Instanz (Objekt) unterschiedlich (eg. calc1.InstanceCount != calc2.InstanceCount)
