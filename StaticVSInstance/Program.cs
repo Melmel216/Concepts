@@ -13,22 +13,22 @@ do
 
     numberInput1 = Calculator.GetNumberInput("Gebe die erste Zahl ein:\t");
     numberInput2 = Calculator.GetNumberInput("Gebe die zweite Zahl ein:\t");
+
+    var userSelect = (Operator)menuInput;
     
-    switch (menuInput)
+    switch (userSelect)
     {
-        case (int)Calculator.Operation.Add:
-            Calculator.Calculate(numberInput1, numberInput2, "+");
+        case Operator.Addition:
+            Calculator.Calculate(numberInput1, numberInput2, Operator.Addition);
             break;
-        case (int)Calculator.Operation.Subtract:
-            Calculator.Calculate(numberInput1, numberInput2, "-");
+        case Operator.Subtraction:
+            Calculator.Calculate(numberInput1, numberInput2, Operator.Subtraction);
             break;
-        case (int)Calculator.Operation.Multiply:
-            Calculator.Calculate(numberInput1, numberInput2, "*");
+        case Operator.Multiplication:
+            Calculator.Calculate(numberInput1, numberInput2, Operator.Multiplication);
             break;
-        case (int)Calculator.Operation.Divide:
-            Calculator.Calculate(numberInput1, numberInput2, "/");
+        case Operator.Division:
+            Calculator.Calculate(numberInput1, numberInput2, Operator.Division);
             break;
     }
 } while (true);
-
-
