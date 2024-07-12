@@ -102,7 +102,7 @@ namespace StaticVSInstance
             //Berechne Fläche
             Count++;
             decimal radius = d / 2;
-            decimal circleArea = (decimal)Math.PI * (radius * radius);
+            decimal circleArea = (decimal)Math.PI * radius * radius;
             Console.WriteLine("Die Fläche des Kreises beträgt: " + circleArea);
 
             //Berechne Umfang
