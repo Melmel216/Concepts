@@ -60,10 +60,8 @@ namespace StaticVSInstance
         public static void CalculateTriangleArea()
         {
             //Abfrage Höhe und Base
-            Console.WriteLine("Gebe die Höhe des Dreiecks an: ");
-            decimal height = decimal.Parse(Console.ReadLine());
-            Console.WriteLine("Gebe bitte die Länge der Base an: ");
-            decimal triangleBase = decimal.Parse(Console.ReadLine());
+            decimal height = Calculator.GetNumberInput("Gebe die Höhe des Dreiecks an: ");
+            decimal triangleBase = Calculator.GetNumberInput("Gebe bitte die Länge der Base an: ");
 
             //Berechne Fläche
             Count++;
@@ -81,12 +79,9 @@ namespace StaticVSInstance
         public static void CalculateTrianglePerimeter()
         { 
             //Abfrage Seitenlängen
-            Console.WriteLine("Gebe die Länge der Seite a an:");
-            decimal sideA = decimal.Parse(Console.ReadLine());
-            Console.WriteLine("Gebe die Länge der Seite b an:");
-            decimal sideB = decimal.Parse(Console.ReadLine());
-            Console.WriteLine("Gebe die Länge der Seite c an:");
-            decimal sideC = decimal.Parse(Console.ReadLine());
+            decimal sideA = Calculator.GetNumberInput("Gebe die Länge der Seite a an:");
+            decimal sideB = Calculator.GetNumberInput("Gebe die Länge der Seite b an:");
+            decimal sideC = Calculator.GetNumberInput("Gebe die Länge der Seite c an:");
 
             //Berechne Umfang
             Count++;
@@ -101,8 +96,7 @@ namespace StaticVSInstance
         public static void CalculateCircle()
         {
             //Abfrage Durchmesser
-            Console.WriteLine("Gebe den Durchmesser des Kreises an:");
-            decimal d = decimal.Parse(Console.ReadLine());
+            decimal d = Calculator.GetNumberInput("Gebe den Durchmesser des Kreises an:");
 
             //Berechne Fläche
             Count++;
@@ -123,10 +117,8 @@ namespace StaticVSInstance
         public static void CalculateRectangle()
         {
             //Abfrage Seitenlänge
-            Console.WriteLine("Gebe die Länge der Seite a an:");
-            decimal sideA = decimal.Parse(Console.ReadLine());
-            Console.WriteLine("Gebe die Länge der Seite b an:");
-            decimal sideB = decimal.Parse(Console.ReadLine());
+            decimal sideA = Calculator.GetNumberInput("Gebe die Länge der Seite a an:");
+            decimal sideB = Calculator.GetNumberInput("Gebe die Länge der Seite b an:");
 
             //Berechne Fläche
             Count++;
