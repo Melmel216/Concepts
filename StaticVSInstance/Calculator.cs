@@ -72,12 +72,18 @@ namespace StaticVSInstance
             Console.WriteLine("Gebe die Länge der Seite c an:");
             decimal sideC = decimal.Parse(Console.ReadLine());
 
+            Console.WriteLine("Gebe die Höhe des Dreiecks an: ");
+            decimal height = decimal.Parse(Console.ReadLine());
+            Console.WriteLine("Gebe bitte die Länge der Base an: ");
+            decimal triangleBase = decimal.Parse(Console.ReadLine()); 
+
             //Berechne Fläche
             Count++;
-            decimal s = (sideA + sideB + sideC) / 2;
-            decimal triangleAreaSquared = (s * (s - sideA) * (s - sideB) * (s - sideC));
-            decimal triangleArea = (decimal)Math.Sqrt((double)triangleAreaSquared);  //keine Ahnung, wie ohne Sqrt lösen
+            //decimal s = (sideA + sideB + sideC) / 2;
+            //decimal triangleAreaSquared = (s * (s - sideA) * (s - sideB) * (s - sideC));
+            //decimal triangleArea = (decimal)Math.Sqrt((double)triangleAreaSquared);  //keine Ahnung, wie ohne Sqrt lösen
 
+            decimal triangleArea = (height * triangleBase) / 2;
             Console.WriteLine("Die Fläche des Dreiecks beträgt: " + triangleArea);
             
             //Berechne Umfang
@@ -151,6 +157,7 @@ namespace StaticVSInstance
     }
 
     
+
 
 
     //if (op == "+")
