@@ -57,7 +57,7 @@ namespace StaticVSInstance
             return result;
         }
 
-        public static decimal CalculateTriangleArea()
+        public static void CalculateTriangleArea()
         {
             //Abfrage Höhe und Base
             Console.WriteLine("Gebe die Höhe des Dreiecks an: ");
@@ -76,10 +76,9 @@ namespace StaticVSInstance
             Console.WriteLine($"Du hast {Count} Berechnungen getätigt.");
             Console.WriteLine("Drücke irgendwas für eine neue Berechnung");
             Console.ReadKey();
-            return triangleArea;
         }
 
-        public static decimal CalculateTrianglePerimeter()
+        public static void CalculateTrianglePerimeter()
         { 
             //Abfrage Seitenlängen
             Console.WriteLine("Gebe die Länge der Seite a an:");
@@ -97,7 +96,6 @@ namespace StaticVSInstance
             Console.WriteLine($"Du hast {Count} Berechnungen getätigt.");
             Console.WriteLine("Drücke irgendwas für eine neue Berechnung");
             Console.ReadKey();
-            return trianglePerimeter;
         }
 
         public static decimal CalculateCircle()
