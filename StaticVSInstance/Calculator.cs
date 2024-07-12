@@ -144,12 +144,12 @@ namespace StaticVSInstance
     enum Operator
     {
         Addition = 1,
-        Subtraction = 2,
-        Multiplication = 3,
-        Division = 4,
-        Triangle = 5,
-        Circle = 6,
-        Rectangle = 7
+        Subtraction,
+        Multiplication,
+        Division,
+        Triangle,
+        Circle,
+        Rectangle
     }
 
     
