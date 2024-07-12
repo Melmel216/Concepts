@@ -1,9 +1,5 @@
 ﻿using StaticVSInstance;
 
-decimal numberInput1 = 0;
-decimal numberInput2 = 0;
-decimal result = 0;
-
 do
 {
     Console.Clear();
