@@ -98,7 +98,7 @@ namespace StaticVSInstance
             Console.ReadKey();
         }
 
-        public static decimal CalculateCircle()
+        public static void CalculateCircle()
         {
             //Abfrage Durchmesser
             Console.WriteLine("Gebe den Durchmesser des Kreises an:");
@@ -118,10 +118,9 @@ namespace StaticVSInstance
             Console.WriteLine($"Du hast {Count} Berechnungen getätigt.");
             Console.WriteLine("Drücke irgendwas für eine neue Berechnung");
             Console.ReadKey();
-            return circleArea;
         }
 
-        public static decimal CalculateRectangle()
+        public static void CalculateRectangle()
         {
             //Abfrage Seitenlänge
             Console.WriteLine("Gebe die Länge der Seite a an:");
@@ -142,7 +141,6 @@ namespace StaticVSInstance
             Console.WriteLine($"Du hast {Count} Berechnungen getätigt.");
             Console.WriteLine("Drücke irgendwas für eine neue Berechnung");
             Console.ReadKey();
-            return rectangleArea;
         }
     }
 
