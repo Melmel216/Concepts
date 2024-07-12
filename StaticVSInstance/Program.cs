@@ -16,16 +16,16 @@ do
     switch (userSelect)
     {
         case Operator.Addition:
-            Calculator.Calculate(numberInput1, numberInput2, Operator.Addition);
+            Calculator.Calculate(Operator.Addition);
             break;
         case Operator.Subtraction:
-            Calculator.Calculate(numberInput1, numberInput2, Operator.Subtraction);
+            Calculator.Calculate(Operator.Subtraction);
             break;
         case Operator.Multiplication:
-            Calculator.Calculate(numberInput1, numberInput2, Operator.Multiplication);
+            Calculator.Calculate(Operator.Multiplication);
             break;
         case Operator.Division:
-            Calculator.Calculate(numberInput1, numberInput2, Operator.Division);
+            Calculator.Calculate(Operator.Division);
             break;
         case Operator.Triangle:
             Calculator.CalculateTriangle();

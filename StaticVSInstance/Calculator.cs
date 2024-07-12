@@ -24,15 +24,15 @@ namespace StaticVSInstance
 
         // Calculate()
         // Refactoring -> Umschreiben vom Code zum Verbessern der Performance, Lesbarkeit oder auch Wartbarkeit
-        public static decimal Calculate(decimal numberInput1, decimal numberInput2, Operator op)
+        public static decimal Calculate(Operator op)
         {
             decimal result = 0;
             Count++;
             switch (op)
             {
                 case Operator.Addition:
-                    numberInput1 = Calculator.GetNumberInput("Gebe die erste Zahl ein:\t");
-                    numberInput2 = Calculator.GetNumberInput("Gebe die zweite Zahl ein:\t");
+                    decimal numberInput1 = Calculator.GetNumberInput("Gebe die erste Zahl ein:\t");
+                    decimal numberInput2 = Calculator.GetNumberInput("Gebe die zweite Zahl ein:\t");
                     result = numberInput1 + numberInput2;
                     Console.WriteLine($"Das Ergebnis von {numberInput1} + {numberInput2} = {result}");
                     break;
