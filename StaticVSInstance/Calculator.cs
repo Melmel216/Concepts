@@ -112,6 +112,8 @@ namespace StaticVSInstance
             
             BackToMenu();
         }
+        //Kurzform für Funktion:
+        //public static double RectangleArea(double a, double b) => a * b; 
 
         public static void CalculateRectangle()
         {
