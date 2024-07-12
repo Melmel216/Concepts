@@ -16,6 +16,13 @@ namespace StaticVSInstance
 
 
         // Methoden
+
+        internal static void BackToMenu()
+        {
+            Console.WriteLine($"Du hast {Count} Berechnungen getätigt.");
+            Console.WriteLine("Drücke irgendwas für eine neue Berechnung");
+            Console.ReadKey();
+        }
         public static decimal GetNumberInput(string inputPrompt)
         {
             Console.Write(inputPrompt);
@@ -51,9 +58,7 @@ namespace StaticVSInstance
                     break;
             }
 
-            Console.WriteLine($"Du hast {Count} Berechnungen getätigt.");
-            Console.WriteLine("Drücke irgendwas für eine neue Berechnung");
-            Console.ReadKey();
+            BackToMenu();
             return result;
         }
 
@@ -71,9 +76,7 @@ namespace StaticVSInstance
 
             decimal triangleArea = (height * triangleBase) / 2;
             Console.WriteLine("Die Fläche des Dreiecks beträgt: " + triangleArea);
-            Console.WriteLine($"Du hast {Count} Berechnungen getätigt.");
-            Console.WriteLine("Drücke irgendwas für eine neue Berechnung");
-            Console.ReadKey();
+            BackToMenu();
         }
 
         public static void CalculateTrianglePerimeter()
@@ -88,9 +91,7 @@ namespace StaticVSInstance
             decimal trianglePerimeter = sideA + sideB + sideC;
 
             Console.WriteLine("Der Umfang des Dreiecks beträgt: " + trianglePerimeter);
-            Console.WriteLine($"Du hast {Count} Berechnungen getätigt.");
-            Console.WriteLine("Drücke irgendwas für eine neue Berechnung");
-            Console.ReadKey();
+            BackToMenu();
         }
 
         public static void CalculateCircle()
@@ -109,9 +110,7 @@ namespace StaticVSInstance
             decimal circlePerimeter = (decimal)Math.PI * d;
             Console.WriteLine("Der Umfang des Kreises beträgt: " + circlePerimeter);
             
-            Console.WriteLine($"Du hast {Count} Berechnungen getätigt.");
-            Console.WriteLine("Drücke irgendwas für eine neue Berechnung");
-            Console.ReadKey();
+            BackToMenu();
         }
 
         public static void CalculateRectangle()
@@ -130,9 +129,7 @@ namespace StaticVSInstance
             decimal rectanglePerimeter = 2 * (sideA + sideB);
             Console.WriteLine("Der Umfang des Rechtecks beträgt: " + rectanglePerimeter);
 
-            Console.WriteLine($"Du hast {Count} Berechnungen getätigt.");
-            Console.WriteLine("Drücke irgendwas für eine neue Berechnung");
-            Console.ReadKey();
+            BackToMenu();
         }
     }
 
@@ -148,7 +145,7 @@ namespace StaticVSInstance
         Rectangle
     }
 
-    
+
 
 
 
@@ -242,12 +239,8 @@ namespace StaticVSInstance
     //        Console.WriteLine("\t1.Add\n\t2.Subtract\n\t3.Multiply\n\t4.Divide");
     //    }
 
-    //    internal static void BackToMenu()
-    //    {
-    //        Console.WriteLine("Drücke irgendwas für eine neue Berechnung");
-    //        Console.ReadKey();
-    //    }
-
-
     
+
+
+
 }
