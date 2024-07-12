@@ -1,4 +1,4 @@
-﻿
+﻿using TD;
 
 int getIndex(string prompt)     //Funktionssignatur
 {
@@ -30,25 +30,28 @@ void Start()
 //Menü anzeigen mit Optionen
 
 Console.WriteLine("Willkommen bei TD!");
-List<string> todos = new();
+
+Todo.DeserializeAll();
 
 do
 {
     Start();
 
-    var input = Console.ReadLine();
+    var menuInput = Console.ReadLine();
 
-    switch (input)
+    switch (menuInput)
     {
         case "1":
             //Todo Eingabe
             Console.WriteLine("Was hast du zu tun? <Enter zum bestätigen>");
-            var todo = Console.ReadLine();
+            var todoInput = Console.ReadLine();
 
-            todos.Add(todo);
+            Todo newTodo = new Todo(todoInput);
+            Todo.Todos.Add(newTodo);
 
-            Console.WriteLine("Todo hinzugefügt:" + todo);
+            Console.WriteLine("Todo hinzugefügt:\n" + newTodo);
 
+            Todo.SerializeAll();
             ReturnToMenu();
             break;
         case "2":
@@ -64,8 +67,8 @@ do
 
             int todoIndex = getIndex("Welches Todo möchtest du löschen?");
 
-            string todoToRemove = todos[todoIndex];
-            todos.RemoveAt(todoIndex);
+            Todo todoToRemove = Todo.Todos[todoIndex];
+            Todo.Todos.RemoveAt(todoIndex);
 
             Console.WriteLine($"GELÖSCHT:  {todoToRemove}");
             PrintListItems("Aktualisierte Todo-Liste:");
@@ -76,15 +79,17 @@ do
 
             PrintListItems("Du hast folgende Todos:");
 
-            int Index = getIndex("Welches Todo möchtest du anpassen?");
+            var index = getIndex("Welches Todo möchtest du anpassen?");
 
             Console.WriteLine("Was möchtest du stattdessen tun?");
 
-            var todoupdate = Console.ReadLine();
-            todos[Index] = todoupdate;
+            string newText = Console.ReadLine();
 
-            Console.WriteLine("Text verändert:" + todoupdate);
+            Todo.Todos[index].Title = newText;
 
+            Console.WriteLine("Text verändert:" + Todo.Todos[index]);
+
+            Todo.SerializeAll();
             ReturnToMenu();
             break;
     }
@@ -99,9 +104,9 @@ Function return value: void myFunc(int) -- the function returns nothing
 void PrintListItems(string prompt)   //kein static, weil gehört zu Objekt?
 {
     Console.WriteLine(prompt);
-    for (int i = 0; i < todos.Count; i++)
+    for (int i = 0; i < Todo.Todos.Count; i++)
     {
-        Console.WriteLine($"\t{i}. {todos[i]}");
+        Console.WriteLine($"{i + 1}. {Todo.Todos[i]}");
     }
 }
 
