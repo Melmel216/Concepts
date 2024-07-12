@@ -57,13 +57,13 @@ namespace StaticVSInstance
             return result;
         }
 
-        public static decimal CalculateTriangle()
+        public static decimal CalculateTriangleArea()
         {
             //Abfrage Höhe und Base
             Console.WriteLine("Gebe die Höhe des Dreiecks an: ");
             decimal height = decimal.Parse(Console.ReadLine());
             Console.WriteLine("Gebe bitte die Länge der Base an: ");
-            decimal triangleBase = decimal.Parse(Console.ReadLine()); 
+            decimal triangleBase = decimal.Parse(Console.ReadLine());
 
             //Berechne Fläche
             Count++;
@@ -73,7 +73,14 @@ namespace StaticVSInstance
 
             decimal triangleArea = (height * triangleBase) / 2;
             Console.WriteLine("Die Fläche des Dreiecks beträgt: " + triangleArea);
+            Console.WriteLine($"Du hast {Count} Berechnungen getätigt.");
+            Console.WriteLine("Drücke irgendwas für eine neue Berechnung");
+            Console.ReadKey();
+            return triangleArea;
+        }
 
+        public static decimal CalculateTrianglePerimeter()
+        { 
             //Abfrage Seitenlängen
             Console.WriteLine("Gebe die Länge der Seite a an:");
             decimal sideA = decimal.Parse(Console.ReadLine());
@@ -90,7 +97,7 @@ namespace StaticVSInstance
             Console.WriteLine($"Du hast {Count} Berechnungen getätigt.");
             Console.WriteLine("Drücke irgendwas für eine neue Berechnung");
             Console.ReadKey();
-            return triangleArea;
+            return trianglePerimeter;
         }
 
         public static decimal CalculateCircle()
@@ -147,7 +154,8 @@ namespace StaticVSInstance
         Subtraction,
         Multiplication,
         Division,
-        Triangle,
+        TriangleArea,
+        TrianglePerimeter,
         Circle,
         Rectangle
     }

@@ -27,8 +27,11 @@ do
         case Operator.Division:
             Calculator.Calculate(Operator.Division);
             break;
-        case Operator.Triangle:
-            Calculator.CalculateTriangle();
+        case Operator.TriangleArea:
+            Calculator.CalculateTriangleArea();
+            break;
+        case Operator.TrianglePerimeter:
+            Calculator.CalculateTrianglePerimeter();
             break;
         case Operator.Circle:
             Calculator.CalculateCircle();
