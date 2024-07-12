@@ -26,31 +26,26 @@ namespace StaticVSInstance
         // Refactoring -> Umschreiben vom Code zum Verbessern der Performance, Lesbarkeit oder auch Wartbarkeit
         public static decimal Calculate(Operator op)
         {
+            decimal numberInput1 = Calculator.GetNumberInput("Gebe die erste Zahl ein:\t");
+            decimal numberInput2 = Calculator.GetNumberInput("Gebe die zweite Zahl ein:\t");
+
             decimal result = 0;
             Count++;
             switch (op)
             {
                 case Operator.Addition:
-                    decimal numberInput1 = Calculator.GetNumberInput("Gebe die erste Zahl ein:\t");
-                    decimal numberInput2 = Calculator.GetNumberInput("Gebe die zweite Zahl ein:\t");
                     result = numberInput1 + numberInput2;
                     Console.WriteLine($"Das Ergebnis von {numberInput1} + {numberInput2} = {result}");
                     break;
                 case Operator.Subtraction:
-                    numberInput1 = Calculator.GetNumberInput("Gebe die erste Zahl ein:\t");
-                    numberInput2 = Calculator.GetNumberInput("Gebe die zweite Zahl ein:\t");
                     result = numberInput1 - numberInput2;
                     Console.WriteLine($"Das Ergebnis von {numberInput1} - {numberInput2} = {result}");
                     break;
                 case Operator.Multiplication:
-                    numberInput1 = Calculator.GetNumberInput("Gebe die erste Zahl ein:\t");
-                    numberInput2 = Calculator.GetNumberInput("Gebe die zweite Zahl ein:\t");
                     result = numberInput1 * numberInput2;
                     Console.WriteLine($"Das Ergebnis von {numberInput1} * {numberInput2} = {result}");
                     break;
                 case Operator.Division:
-                    numberInput1 = Calculator.GetNumberInput("Gebe die erste Zahl ein:\t");
-                    numberInput2 = Calculator.GetNumberInput("Gebe die zweite Zahl ein:\t");
                     result = numberInput1 / numberInput2;
                     Console.WriteLine($"Das Ergebnis von {numberInput1} / {numberInput2} = {result}");
                     break;
@@ -64,14 +59,7 @@ namespace StaticVSInstance
 
         public static decimal CalculateTriangle()
         {
-            //Abfrage Seitenlängen
-            Console.WriteLine("Gebe die Länge der Seite a an:");
-            decimal sideA = decimal.Parse(Console.ReadLine());
-            Console.WriteLine("Gebe die Länge der Seite b an:");
-            decimal sideB = decimal.Parse(Console.ReadLine());
-            Console.WriteLine("Gebe die Länge der Seite c an:");
-            decimal sideC = decimal.Parse(Console.ReadLine());
-
+            //Abfrage Höhe und Base
             Console.WriteLine("Gebe die Höhe des Dreiecks an: ");
             decimal height = decimal.Parse(Console.ReadLine());
             Console.WriteLine("Gebe bitte die Länge der Base an: ");
@@ -85,7 +73,15 @@ namespace StaticVSInstance
 
             decimal triangleArea = (height * triangleBase) / 2;
             Console.WriteLine("Die Fläche des Dreiecks beträgt: " + triangleArea);
-            
+
+            //Abfrage Seitenlängen
+            Console.WriteLine("Gebe die Länge der Seite a an:");
+            decimal sideA = decimal.Parse(Console.ReadLine());
+            Console.WriteLine("Gebe die Länge der Seite b an:");
+            decimal sideB = decimal.Parse(Console.ReadLine());
+            Console.WriteLine("Gebe die Länge der Seite c an:");
+            decimal sideC = decimal.Parse(Console.ReadLine());
+
             //Berechne Umfang
             Count++;
             decimal trianglePerimeter = sideA + sideB + sideC;
